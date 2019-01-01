@@ -27,10 +27,11 @@ const PackageStyle = Styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-color: white;
     box-shadow: 0 1.5rem 4rem rgba(15,48,87,.1);
     border-radius: 1.4rem;
+    padding: 1.2rem;
 
     .image {
         width: 100%;
@@ -39,9 +40,10 @@ const PackageStyle = Styled.div`
         jstify-content: center;
         align-items: center;
         overflow: hidden;
+        margin: 1.2rem 0;
 
         img {
-            height: 100%;
+            width: 100%;
         }
     }
 
@@ -50,6 +52,8 @@ const PackageStyle = Styled.div`
         flex-directio: row;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
+        padding-left: 1.2rem;
     }
 `;
 
