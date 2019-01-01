@@ -36,14 +36,14 @@ const SpecialDealsStyle = Styled.section`
         width: 100%;
         max-width: 128rem;
 
+        p {
+            margin-top: 1.2rem;
+        }
+
         @media(max-width: 56rem) {
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-
-            p {
-                margin-top: 1.2rem;
-            }
 
             div:nth-child(2) {
                 margin-top: 2.4rem;
