@@ -3,7 +3,7 @@ import Styled from 'styled-components';
 
 const P = props => {
     return (
-        <PStyle white={props.white}>
+        <PStyle white={props.white} align={props.align}>
             {props.children}
         </PStyle>
     );
