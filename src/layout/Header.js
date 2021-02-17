@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
-import NavBar from '../organism/NavBar';
-import Styled from "../organism/NavBar";
+import NavBar from '../components/organism/NavBar';
+import Styled from "../components/organism/NavBar";
 
 const Header = () => {
     return (
