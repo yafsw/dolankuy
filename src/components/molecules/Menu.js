@@ -34,13 +34,13 @@ const MenuStyle = Styled.div`
         text-decoration: none;
 
         &:nth-child(2) {
-            margin: 0 1.2rem;
+            margin: 0 2.4rem;
 
             @media(max-width: 48rem) {
                 margin: 1.2rem 0;
             }
         }
     }
-`;
+`;  
 
 export default memo(Menu);
