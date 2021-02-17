@@ -1,19 +1,19 @@
 import React, { memo } from 'react';
 import Styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import P from '../atoms/P';
+import Span from '../atoms/Span';
 
 const Menu = props => {
     return (
         <MenuStyle>
             <Link to="/explore">
-                <P color={props.color}>Explore</P>
+                <Span color={props.color}>Explore</Span>
             </Link>
             <Link to="/special-deals">
-                <P color={props.color}>Special Deals</P>
+                <Span color={props.color}>Special Deals</Span>
             </Link>
             <Link to="testimonial">
-                <P color={props.color}>Testimonial</P>
+                <Span color={props.color}>Testimonial</Span>
             </Link>
         </MenuStyle>
     );
