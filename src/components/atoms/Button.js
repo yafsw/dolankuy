@@ -5,7 +5,7 @@ import { primary } from '../../config/color';
 
 const Button = props => {
     return (
-        <ButtonStyle to={props.to}>
+        <ButtonStyle to={props.to} color={props.color}>
             {props.children}
         </ButtonStyle>
     );
@@ -16,12 +16,12 @@ const ButtonStyle = Styled(Link)`
     justify-content: center;
     align-items: center;
     padding: 1.8rem 4.8rem;
-    color: white;
+    color: ${props => props.color === 'white' ? 'black' : 'white'};
     font-size: 1.6rem;
     font-weight: bold;
-    border-radius: 2rem;
+    border-radius: 1rem;
     text-decoration: none;
-    background-color: ${primary};
+    background-color: ${props => props.color ? props.color : primary};
 `;
 
 export default memo(Button);
