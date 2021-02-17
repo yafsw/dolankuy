@@ -1,6 +1,7 @@
 import React, { memo } from 'react';
 import Styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { primary } from '../../config/color';
 
 const Button = props => {
     return (
@@ -20,6 +21,7 @@ const ButtonStyle = Styled(Link)`
     font-weight: bold;
     border-radius: 2rem;
     text-decoration: none;
+    background-color: ${primary};
 `;
 
 export default memo(Button);
