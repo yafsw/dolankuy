@@ -15,6 +15,7 @@ const LogoStyle = Styled(Link)`
     color: ${props => props.color ? props.color : 'black'};
     text-decoration: none;
     cursor: pointer;
+    font-weight: bold;
 `;
 
 export default memo(Logo);
