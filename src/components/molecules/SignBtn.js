@@ -27,8 +27,7 @@ const SignBtnStyle = Styled.div`
         text-decoration: none;
 
         &:nth-child(2) {    
-            margin-left: 1.2rem;
-            padding: .6rem 1.8rem;
+            margin-left: 2.4rem;
         }
     }
 `;
