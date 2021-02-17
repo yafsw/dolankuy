@@ -3,7 +3,7 @@ import Styled from 'styled-components';
 
 const P = props => {
     return (
-        <PStyle white={props.white} align={props.align}>
+        <PStyle color={props.color} align={props.align}>
             {props.children}
         </PStyle>
     );
@@ -11,7 +11,7 @@ const P = props => {
 
 const PStyle = Styled.p`
     font-size: 1.6rem;
-    color: ${props => props.white ? 'white' : 'black'};
+    color: ${props => props.color ? props.color : 'black'};
     text-align: ${props => props.align ? props.align : 'left'};
     line-height: 1.5;
 `;
