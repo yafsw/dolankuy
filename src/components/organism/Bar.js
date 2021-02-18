@@ -24,6 +24,10 @@ const BarStyle = Styled.div`
     align-items: flex-start;
     width: 100%;
 
+    @media(min-width: 48rem) {
+        display: none;
+    }
+
     div {
         margin-top: 1.2rem;
         width: 100%;
