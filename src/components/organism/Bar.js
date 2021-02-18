@@ -11,8 +11,6 @@ const Bar = () => {
         <BarStyle show={state.bar}>
             <div>
                 <Menu />
-            </div>
-            <div className="sign">
                 <SignBtn />
             </div>
         </BarStyle>
@@ -28,6 +26,7 @@ const BarStyle = Styled.div`
 
     div {
         margin-top: 1.2rem;
+        width: 100%;
     }
 `;
 
