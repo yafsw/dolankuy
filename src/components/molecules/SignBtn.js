@@ -21,6 +21,11 @@ const SignBtnStyle = Styled.div`
     justify-content: center;    
     align-items: center;
 
+    @media(max-width: 48rem) {
+        width: 100%;
+        justify-content: space-between;
+    }
+
     a {
         text-decoration: none;
 
