@@ -4,8 +4,12 @@ import Logo from "../atoms/Logo";
 import Menu from "../molecules/Menu";
 import SignBtn from "../molecules/SignBtn";
 import { IoMenu } from 'react-icons/io5';
+import { IoClose } from 'react-icons/io5';
+import { useApp } from '../../context';
 
 const NavBar = () => {
+    const { state, action } = useApp();
+
     return (
         <NavBarStyle>
             <Logo />
@@ -15,8 +19,8 @@ const NavBar = () => {
             <div className="desktop">
                 <SignBtn />
             </div>
-            <div className="mobile">
-                <IoMenu className="menu" />
+            <div className="mobile" onClick={action.handleBar}>
+                {state.bar ? <IoClose className="handle" /> : <IoMenu className="handle" />}
             </div>
         </NavBarStyle>
     );
@@ -50,7 +54,7 @@ const NavBarStyle = Styled.nav`
         }
     }
 
-    .menu {
+    .handle {
         font-size: 4rem;
         color: black;
     }
