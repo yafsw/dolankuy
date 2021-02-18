@@ -10,9 +10,7 @@ const SignBtn = props => {
             <Link to="/signin">
                 <Span colot={props.color}>Sign In</Span>
             </Link>
-            <Link to="/signup">
-                <Button colot={props.color}>Sign Up</Button>
-            </Link>
+            <Button to="/signup" colot={props.color}>Sign Up</Button>
         </SignBtnStyle>
     );
 };
