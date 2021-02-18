@@ -22,8 +22,8 @@ const SignBtnStyle = Styled.div`
     align-items: center;
 
     @media(max-width: 48rem) {
-        width: 100%;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     a {
@@ -31,6 +31,11 @@ const SignBtnStyle = Styled.div`
 
         &:nth-child(2) {    
             margin-left: 2.4rem;
+            
+            @media(max-width: 48rem) {
+                margin-left: 0;
+                margin-top: 1.2rem;
+            }
         }
     }
 `;
