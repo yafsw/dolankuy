@@ -28,6 +28,7 @@ const MenuStyle = Styled.div`
 
     @media(max-width: 48rem) {
         flex-direction: column;
+        align-items: flex-start;
     }
 
     a {
