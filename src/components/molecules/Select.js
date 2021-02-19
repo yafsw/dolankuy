@@ -10,7 +10,7 @@ const Select = props => {
             <div>
                 <P><b>{props.title}</b><MdKeyboardArrowDown className="arrow" /></P>
             </div>
-            <P color="lightgrey">{props.selcted}</P>
+            <P color="lightgrey">{props.selected}</P>
         </SelectStyle>
     );
 };
