@@ -14,6 +14,9 @@ const SpanStyle = Styled.p`
     color: ${props => props.color ? props.color : 'black'};
     text-align: ${props => props.align ? props.align : 'left'};
     line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 export default memo(Span);
