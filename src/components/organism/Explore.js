@@ -11,7 +11,7 @@ const Explore = () => {
                 <Select title="Date" selected="Set your date" />
                 <Select title="People" selected="Enter your people" />
             </div>
-            <Button>
+            <Button to="/explore">
                 Explore
             </Button>
         </ExploreStyle>
