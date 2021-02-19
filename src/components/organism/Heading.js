@@ -17,8 +17,19 @@ const Heading = () => {
 
 const HeadingStyle = Styled.section`
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    max-width: 128rem;
+
+    p {
+        margin-top: 1.2rem;
+    }
+
+    div {
+        margin: 2.4rem 0;
+    }
 `;
 
 export default memo(Heading);
