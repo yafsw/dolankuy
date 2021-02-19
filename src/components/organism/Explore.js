@@ -6,7 +6,7 @@ import Select from '../molecules/Select';
 const Explore = () => {
     return (
         <ExploreStyle>
-            <div>
+            <div className="select">
                 <Select title="Location" selected="Enter your destination" />
                 <Select title="Date" selected="Set your date" />
                 <Select title="People" selected="Enter your people" />
@@ -24,6 +24,13 @@ const ExploreStyle = Styled.div`
     alihn-items: center;
     padding: 1.2rem;
     border-radius: 1rem;
+    box-shadow: 0 1.5rem 4rem rgba(15,48,87,.1);
+
+    .select {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 export default memo(Explore);
