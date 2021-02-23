@@ -19,6 +19,8 @@ const HeaderStyle = Styled.header`
     align-items: center;
     padding: 2.4rem;
     width: 100%;
+    position: fixed;
+    top: 0;
 `;
 
 export default memo(Header);
