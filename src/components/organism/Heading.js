@@ -7,25 +7,35 @@ import Explore from '../organism/Explore';
 const Heading = () => {
     return (
         <HeadingStyle>
-            <H1>Explore The World So Easily </H1>
-            <div className="text">
-                <P>We will lead you to enjoy your adventure in exploring the world with ease and fun</P>
+            <div className="container">
+                <H1 color="white">Explore The World So Easily </H1>
+                <div className="text">
+                    <P color="white">We will lead you to enjoy your adventure in exploring the world with ease and fun</P>
+                </div>
+                <div className="explore">
+                    <Explore />
+                </div>
+                <P color="white">Popular: Yogyakarta, Lombok, Bali, Borobudur, Wakatobi</P>
             </div>
-            <div className="explore">
-                <Explore />
-            </div>
-            <P>Popular: Yogyakarta, Lombok, Bali, Borobudur, Wakatobi</P>
         </HeadingStyle>
     );
 };
 
 const HeadingStyle = Styled.section`
+    width: 100%;
+    background-image: url('assets/img/background.jpg');
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-    max-width: 128rem;
+    align-items: center;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        max-width: 128rem;
+    }
 
     .text {
         margin-top: 1.2rem;
