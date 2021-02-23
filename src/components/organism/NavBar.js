@@ -7,17 +7,17 @@ import { IoMenu } from 'react-icons/io5';
 import { IoClose } from 'react-icons/io5';
 import { useApp } from '../../context';
 
-const NavBar = () => {
+const NavBar = props => {
     const { state, action } = useApp();
 
     return (
         <NavBarStyle>
-            <Logo />
+            <Logo color={props.color} />
             <div className="desktop">
-                <Menu />
+                <Menu color={props.color} />
             </div>
             <div className="desktop">
-                <SignBtn />
+                <SignBtn color={props.color} />
             </div>
             <div className="mobile" onClick={action.handleBar}>
                 {state.bar ? <IoClose className="handle" /> : <IoMenu className="handle" />}
