@@ -16,7 +16,6 @@ const MainHomeStyle = Styled.main`
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 2.4rem;
 `;
 
 export default memo(MainHome);
