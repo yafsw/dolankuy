@@ -29,6 +29,7 @@ const HeadingStyle = Styled.section`
     align-items: center;
 
     .container {
+        margin: 8rem 2.4rem 2.4rem 2.4rem;
         display: flex;
         justify-content: center;
         align-items: flex-start;
