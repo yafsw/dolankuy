@@ -31,6 +31,7 @@ const ExploreStyle = Styled.div`
     padding: 1.2rem 1.2rem 1.2rem 2.4rem;
     border-radius: 1rem;
     box-shadow: 0 1.5rem 4rem rgba(15,48,87,.1);
+    background-color: white;
 
     @media(max-width: 48rem) {
         flex-direction: column;
