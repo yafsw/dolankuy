@@ -3,11 +3,11 @@ import NavBar from '../components/organism/NavBar';
 import Bar from '../components/organism/Bar';
 import Styled from 'styled-components';
 
-const Header = () => {
+const Header = props => {
     return (
         <HeaderStyle>
-            <NavBar />
-            <Bar />
+            <NavBar color={props.color} />
+            <Bar color={props.color} />
         </HeaderStyle>
     );
 };
