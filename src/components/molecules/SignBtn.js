@@ -8,7 +8,7 @@ const SignBtn = props => {
     return (
         <SignBtnStyle>
             <Link to="/signin">
-                <Span colot={props.color}>Sign In</Span>
+                <Span color={props.color}>Sign In</Span>
             </Link>
             <Button to="/signup" colot={props.color}>Sign Up</Button>
         </SignBtnStyle>
