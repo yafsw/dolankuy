@@ -21,6 +21,7 @@ const HeaderStyle = Styled.header`
     width: 100%;
     position: fixed;
     top: 0;
+    height: 8rem;
 `;
 
 export default memo(Header);
