@@ -5,7 +5,7 @@ import MainHome from '../layout/MainHome';
 const Home = () => {
     return (
         <>
-            <Header />
+            <Header color="white" />
             <MainHome />
         </>
     );
