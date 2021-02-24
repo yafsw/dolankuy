@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 const Logo = props => {
     return (
-        <LogoStyle to="/">
+        <LogoStyle to="/" color={props.color}>
             Dolankuy
         </LogoStyle>
     );
