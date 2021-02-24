@@ -20,7 +20,7 @@ const NavBar = props => {
                 <SignBtn color={props.color} />
             </div>
             <div className="mobile" onClick={action.handleBar}>
-                {state.bar ? <IoClose className="handle" /> : <IoMenu className="handle" />}
+                {state.bar ? <IoClose className="handle" color={props.color} /> : <IoMenu className="handle" color={props.color} />}
             </div>
         </NavBarStyle>
     );
@@ -57,6 +57,7 @@ const NavBarStyle = Styled.nav`
     .handle {
         font-size: 4rem;
         color: black;
+        color: ${props => props.color ? props.color : 'black'}:
     }
 `;
 
