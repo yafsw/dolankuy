@@ -15,9 +15,7 @@ const Home = () => {
         };
 
         const background = () => {
-            state.bar
-                ? setScroll('black')
-                : setScroll('transparent')
+            state.bar && setScroll('black')
         };
         background();
     }, [state.bar]);
