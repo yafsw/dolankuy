@@ -5,7 +5,7 @@ import Styled from 'styled-components';
 
 const Header = props => {
     return (
-        <HeaderStyle>
+        <HeaderStyle background={props.background}>
             <NavBar color={props.color} />
             <Bar color={props.color} />
         </HeaderStyle>
@@ -16,12 +16,12 @@ const HeaderStyle = Styled.header`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     padding: 2.4rem;
     width: 100%;
     position: fixed;
     top: 0;
-    height: 8rem;
+    background-color: ${props => props.background ? props.background : 'white'};
 `;
 
 export default memo(Header);
