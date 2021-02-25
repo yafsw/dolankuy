@@ -4,14 +4,14 @@ import Menu from '../molecules/Menu';
 import SignBtn from '../molecules/SignBtn';
 import { useApp } from '../../context';
 
-const Bar = () => {
+const Bar = props => {
     const { state } = useApp();
 
     return (
         <BarStyle show={state.bar}>
             <div>
-                <Menu />
-                <SignBtn />
+                <Menu color={props.color} />
+                <SignBtn color={props.color} />
             </div>
         </BarStyle>
     );
