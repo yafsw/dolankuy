@@ -14,6 +14,7 @@ const PStyle = Styled.p`
     color: ${props => props.color ? props.color : 'black'};
     text-align: ${props => props.align ? props.align : 'left'};
     line-height: 1.5;
+    max-width: 38rem;
 `;
 
 export default memo(P);
