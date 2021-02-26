@@ -37,7 +37,7 @@ const HeadingStyle = Styled.section`
     justify-content: center;
     align-items: center;
     height: 74.8rem;
-    padding: 10.4rem 2.4rem 2.4rem 2.4rem;
+    padding: 10.4rem 2.4rem 2.4rem;
 
     @media(max-width: 72rem) {
         height: auto;
@@ -98,14 +98,8 @@ const HeadingStyle = Styled.section`
     }
 
     .explore {
-        margin-top: 3.6rem;
-
-        @media(max-width: 72rem) {
-            margin: 0;
-        }
-
         @media(max-width: 42rem) {
-            margin-top: 2.4rem;
+            margin-top: 3.6rem;
             width: 100%;
         }
     }
