@@ -9,7 +9,7 @@ const Home = () => {
 
     useEffect(() => {
         window.onscroll = () => {
-            document.body.scrollTop > 40 || document.documentElement.scrollTop > 40
+            document.body.scrollTop > 40 || document.documentElement.scrollTop > 40 || state.bar
                 ? setScroll('black')
                 : setScroll('transparent')
         };
