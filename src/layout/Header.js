@@ -22,6 +22,7 @@ const HeaderStyle = Styled.header`
     position: fixed;
     top: 0;
     background-color: ${props => props.background ? props.background : 'white'};
+    z-index: 999;
 `;
 
 export default memo(Header);
