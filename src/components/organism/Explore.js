@@ -29,7 +29,7 @@ const ExploreStyle = Styled.div`
     justify-content: center;
     alihn-items: center;
     padding: 1.2rem 1.2rem 1.2rem 2.4rem;
-    border-radius: 1rem;
+    border-radius: 1.2rem;
     box-shadow: 0 1.5rem 4rem rgba(15,48,87,.1);
     background-color: white;
 
