@@ -8,18 +8,23 @@ const Heading = () => {
     return (
         <HeadingStyle>
             <div className="container">
-                <H1 color="white">Explore The World So Easily </H1>
                 <div className="text">
-                    <P color="white">We will lead you to enjoy your adventure in exploring the world with ease and fun</P>
+                    <div className="title">
+                        <H1 color="white">Explore The World So Easily </H1>
+                    </div>
+                    <div className="description">
+                        <P color="white">We will lead you to enjoy your adventure in exploring the world with ease and fun</P>
+                    </div>
+                    <div className="explore">
+                        <Explore />
+                    </div>
+                    <P color="white">Popular: Yogyakarta, Lombok, Bali, Borobudur, Wakatobi</P>
                 </div>
-                <div className="explore">
-                    <Explore />
+                <div className="image">
+                    <img src="assets/img/image.jpg" alt="surfing" />
                 </div>
-                <P color="white">Popular: Yogyakarta, Lombok, Bali, Borobudur, Wakatobi</P>
             </div>
-            <div className="image">
-                <img  />
-            </div>
+            
         </HeadingStyle>
     );
 };
@@ -30,7 +35,7 @@ const HeadingStyle = Styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    height: 74.8rem;
 
     .container {
         margin: 10.4rem 2.4rem 2.4rem 2.4rem;
@@ -40,9 +45,31 @@ const HeadingStyle = Styled.section`
         flex-direction: column;
         width: 100%;
         max-width: 128rem;
+        position: relative;
     }
 
     .text {
+        position: relative;
+        z-index: 1;
+    }
+
+    .image {
+        height: 56rem;
+        width: 70rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2.4rem;
+        position: absolute;
+        right 0;
+
+        img {
+            height: 56rem;
+        }
+    }
+
+    .description {
         margin-top: 1.2rem;
     }
 
