@@ -60,11 +60,15 @@ const HeadingStyle = Styled.section`
         @media(max-width: 72rem) {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
         }
 
-        @media(max-width: 48rem) {
+        @media(max-width: 58rem) {
             flex-direction: column;
             width: 100%;
+            align-items : flex-start;
         }
     }
 
@@ -95,6 +99,14 @@ const HeadingStyle = Styled.section`
 
     .explore {
         margin-top: 3.6rem;
+
+        @media(max-width: 72rem) {
+            margin: 0;
+        }
+
+        @media(max-width: 58rem) {
+            margin-top: 3.6rem;
+        }
     }
 `;
 
