@@ -37,7 +37,7 @@ const HeadingStyle = Styled.section`
     justify-content: center;
     align-items: center;
     height: 74.8rem;
-    padding: 10.4rem 2.4rem 4.8rem 2.4rem;
+    padding: 10.4rem 2.4rem 2.4rem 2.4rem;
 
     @media(max-width: 72rem) {
         height: auto;
@@ -65,7 +65,7 @@ const HeadingStyle = Styled.section`
             align-items: center;
         }
 
-        @media(max-width: 58rem) {
+        @media(max-width: 42rem) {
             flex-direction: column;
             width: 100%;
             align-items : flex-start;
@@ -79,10 +79,10 @@ const HeadingStyle = Styled.section`
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 2.4rem;
         position: absolute;
         right 0;
         box-shadow: 0 1.5rem 4rem rgba(15,48,87,.1);
+        border-radius: 1.8rem;
 
         @media(max-width: 72rem) {
             display: none;
@@ -104,8 +104,9 @@ const HeadingStyle = Styled.section`
             margin: 0;
         }
 
-        @media(max-width: 58rem) {
-            margin-top: 3.6rem;
+        @media(max-width: 42rem) {
+            margin-top: 2.4rem;
+            width: 100%;
         }
     }
 `;
