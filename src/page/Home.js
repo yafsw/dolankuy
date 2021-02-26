@@ -25,7 +25,7 @@ const Home = () => {
             <Header color="white" background={scroll} />
             <MainHome />
         </>
-    );
+    );      
 };
 
 export default memo(Home);

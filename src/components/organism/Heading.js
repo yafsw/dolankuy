@@ -9,16 +9,17 @@ const Heading = () => {
         <HeadingStyle>
             <div className="container">
                 <div className="text">
-                    <div className="title">
-                        <H1 color="white">Explore The World So Easily </H1>
-                    </div>
-                    <div className="description">
-                        <P color="white">We will lead you to enjoy your adventure in exploring the world with ease and fun</P>
+                    <div>
+                        <div className="title">
+                            <H1 color="white">Explore The World So Easily </H1>
+                        </div>
+                        <div className="description">
+                            <P color="white">We will lead you to enjoy your adventure in exploring the world with ease and fun</P>
+                        </div>
                     </div>
                     <div className="explore">
                         <Explore />
                     </div>
-                    <P color="white">Popular: Yogyakarta, Lombok, Bali, Borobudur, Wakatobi</P>
                 </div>
                 <div className="image">
                     <img src="assets/img/image.jpg" alt="surfing" />
@@ -36,9 +37,13 @@ const HeadingStyle = Styled.section`
     justify-content: center;
     align-items: center;
     height: 74.8rem;
+    padding: 10.4rem 2.4rem 4.8rem 2.4rem;
+
+    @media(max-width: 72rem) {
+        height: auto;
+    }
 
     .container {
-        margin: 10.4rem 2.4rem 2.4rem 2.4rem;
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -51,6 +56,16 @@ const HeadingStyle = Styled.section`
     .text {
         position: relative;
         z-index: 1;
+
+        @media(max-width: 72rem) {
+            display: flex;
+            flex-direction: row;
+        }
+
+        @media(max-width: 48rem) {
+            flex-direction: column;
+            width: 100%;
+        }
     }
 
     .image {
@@ -63,6 +78,11 @@ const HeadingStyle = Styled.section`
         border-radius: 2.4rem;
         position: absolute;
         right 0;
+        box-shadow: 0 1.5rem 4rem rgba(15,48,87,.1);
+
+        @media(max-width: 72rem) {
+            display: none;
+        }
 
         img {
             height: 56rem;
@@ -74,7 +94,7 @@ const HeadingStyle = Styled.section`
     }
 
     .explore {
-        margin: 3.6rem 0;
+        margin-top: 3.6rem;
     }
 `;
 
