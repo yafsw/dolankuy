@@ -33,7 +33,7 @@ const ExploreStyle = Styled.div`
     box-shadow: 0 1.5rem 4rem rgba(15,48,87,.1);
     background-color: white;
 
-    @media(max-width: 48rem) {
+    @media(max-width: 72rem) {
         flex-direction: column;
         padding: 1.2rem;
         width: 100%;
@@ -44,7 +44,11 @@ const ExploreStyle = Styled.div`
         justify-content: center;
         align-items: center;
 
-        @media(max-width: 48rem) {
+        @media(max-width: 72rem) {
+            margin-bottom: 1.2rem;
+        }
+
+        @media(max-width: 60rem) {
             flex-direction: column;
             width: 100%;
             align-items: flex-start;
@@ -53,8 +57,9 @@ const ExploreStyle = Styled.div`
 
     .select {
         margin-right: 2.4rem;
+        margin-left: 1.2rem;
 
-        @media(max-width: 48rem) {
+        @media(max-width: 60rem) {
             margin: 0 1.2rem 1.2rem 1.2rem;
         }
     }
