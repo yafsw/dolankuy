@@ -22,7 +22,7 @@ const ExperiencesStyle = Styled.section`
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 4.8rem 2.4rem;
+    padding: 2.4rem;
 
     .title {
         display: flex;
