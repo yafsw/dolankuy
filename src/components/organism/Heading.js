@@ -17,6 +17,9 @@ const Heading = () => {
                 </div>
                 <P color="white">Popular: Yogyakarta, Lombok, Bali, Borobudur, Wakatobi</P>
             </div>
+            <div className="image">
+                <img  />
+            </div>
         </HeadingStyle>
     );
 };
@@ -27,6 +30,7 @@ const HeadingStyle = Styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     .container {
         margin: 10.4rem 2.4rem 2.4rem 2.4rem;
@@ -43,7 +47,7 @@ const HeadingStyle = Styled.section`
     }
 
     .explore {
-        margin: 2.4rem 0;
+        margin: 3.6rem 0;
     }
 `;
 
