@@ -14,6 +14,7 @@ const H1Style = Styled.h1`
     color: ${props => props.color ? props.color : 'black'};
     text-align: ${props => props.align ? props.align : 'left'};
     line-height: 1.2;
+    max-width: 38rem;
 `;
 
 export default memo(H1);
