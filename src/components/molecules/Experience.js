@@ -1,6 +1,7 @@
 import React, { memo } from 'react';
 import Styled from 'styled-components';
 import P from '../atoms/P';
+import { secondary } from '../../config/color';
 
 const Experience = props => {
     return (
@@ -10,7 +11,7 @@ const Experience = props => {
             </div>
             <div className="text">
                 <b><P>{props.title}</P></b>
-                <P>{props.description}</P>
+                <P color="grey">{props.description}</P>
             </div>
         </ExperienceStyle>
     );
@@ -21,17 +22,24 @@ const ExperienceStyle = Styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border-radius; 1.4rem;
-    padding: 1,2remm;
+    padding: 1.2rem;
+    background-color: white;
+    box-shadow: 0 1.5rem 4rem rgba(15,48,87,.1);
+    border-radius: 1.4rem;
 
     .image {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 78rem;
-        width: 78rem;
         border-radius: 1.2rem;
         margin-right: 1.2rem;
+        background-color: ${secondary};
+        padding: 1.2rem;
+
+        img {
+            height: 4.8rem;
+            width: 4.8rem;
+        }
     }
 `;
 
