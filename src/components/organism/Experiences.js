@@ -2,6 +2,7 @@ import React, { memo } from 'react';
 import Styled from 'styled-components';
 import H1 from '../atoms/H1';
 import P from '../atoms/P';
+import Experience from '../molecules/Experience';
 
 const Experiences = () => {
     return (
@@ -11,6 +12,9 @@ const Experiences = () => {
                 <div className="description">
                     <P>Feel the exited activities on the way you’re going to trip, we have a lot of activities that you can explore with our professional guide</P>
                 </div>
+            </div>
+            <div className="experiences">
+                <Experience src="assets/icons/sun-umbrella.svg" title="Beach Activity" description="24 Properties" />
             </div>
         </ExperiencesStyle>
     );
