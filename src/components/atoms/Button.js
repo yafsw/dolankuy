@@ -19,7 +19,7 @@ const ButtonStyle = Styled(Link)`
     color: ${props => props.color === 'white' ? 'black' : 'white'};
     font-size: 1.6rem;
     font-weight: bold;
-    border-radius: 1rem;
+    border-radius: 1.2rem;
     text-decoration: none;
     background-color: ${props => props.color ? props.color : primary};
 `;
