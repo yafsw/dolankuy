@@ -21,11 +21,12 @@ const ExperienceStyle = Styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 1.2rem;
     background-color: white;
     box-shadow: 0 1.5rem 4rem rgba(15,48,87,.1);
     border-radius: 1.4rem;
+    width: 100%;
 
     .image {
         display: flex;
