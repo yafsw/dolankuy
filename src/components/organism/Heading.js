@@ -98,9 +98,15 @@ const HeadingStyle = Styled.section`
     }
 
     .explore {
+        margin-top: 3.6rem;
+
+        @media(max-width: 72rem) {
+            margin: 0;
+        }
+
         @media(max-width: 42rem) {
-            margin-top: 3.6rem;
             width: 100%;
+            margin: 3.6rem 0;
         }
     }
 `;
