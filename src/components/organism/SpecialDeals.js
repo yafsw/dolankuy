@@ -13,14 +13,14 @@ const SpecialDeals = () => {
                     <P>Get full package experience included with all of your needs on the trips</P>
                 </div>
                 <div>
-                    <Button>View All Packages</Button>
+                    <Button to="/special-deaals">View All Packages</Button>
                 </div>
             </div>
         </SpecialDealsStyle>
     );
 };
 
-const SpecialDealsStyle = Styled.sectio`
+const SpecialDealsStyle = Styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,14 +31,19 @@ const SpecialDealsStyle = Styled.sectio`
     .title{
         display: flex;
         flex-direction: row;
-        justify-cotent: space-between;
+        justify-content: space-between;
         align-items: center;
         width: 100%;
         max-width: 128rem;
 
         @media(max-width: 56rem) {
             flex-direction: column;
-            justify-content: cemter;
+            justify-content: center;
+            align-items: flex-start;
+
+            p {
+                margin-top: 1.2rem;
+            }
 
             div:nth-child(2) {
                 margin-top: 2.4rem;
