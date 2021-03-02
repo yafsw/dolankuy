@@ -2,8 +2,9 @@ import React, { memo } from 'react';
 import Styled from 'styled-components';
 import Button from '../atoms/Button';
 import P from '../atoms/P';
+import H3 from '../atoms/H3';
 import { primary } from '../../config/color';
-import { IoLocationSharp, IoCompass } from 'react-icons/io5';
+import { IoLocationSharp, IoCompass, IoCalendarSharp } from 'react-icons/io5';
 import { RiFootprintFill } from 'react-icons/ri';
 
 const Package = props => {
@@ -15,7 +16,7 @@ const Package = props => {
             </div>
             <div className="name">
                 <b>
-                    <P>{props.name}</P>
+                    <H3>{props.name}</H3>
                 </b>
             </div>
             <div className="image">
@@ -31,7 +32,7 @@ const Package = props => {
                     <P color="grey">10 Places</P>
                 </div>
                 <div className="text-icon">
-                    <RiFootprintFill />
+                    <IoCalendarSharp className="icon" />
                     <P color="grey">1 Week</P>
                 </div>
             </div>
