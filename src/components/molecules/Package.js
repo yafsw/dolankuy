@@ -37,12 +37,14 @@ const PackageStyle = Styled.div`
         width: 100%;
         border-radius: 1.2rem;
         display: flex;
-        jstify-content: center;
+        justify-content: center;
         align-items: center;
         overflow: hidden;
         margin: 1.2rem 0;
+        height: 18rem;
 
         img {
+            height: auto;
             width: 100%;
         }
     }
