@@ -81,6 +81,15 @@ const SpecialDealsStyle = Styled.section`
         margin-top: 2.4rem;
         width: 100%;
         max-width: 128rem;
+
+        @media(max-width: 28rem) {
+            grid-auto-rows : 43rem;
+            grid-template-columns: 1fr;
+        }
+
+        @media(max-width: 20rem) {
+            grid-auto-rows : 45.4rem;
+        }
     }
 `;
 
