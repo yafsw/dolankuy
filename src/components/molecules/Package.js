@@ -61,11 +61,19 @@ const PackageStyle = Styled.div`
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        height: 18rem;
+        height: 18rem;  
 
         img {
             height: auto;
             width: 100%;
+
+            @media(max-width: 28rem) {
+                height: 100%;
+            }
+        }
+
+        @media(max-width: 28rem) {
+            height: 12rem;
         }
     }
 
@@ -75,6 +83,18 @@ const PackageStyle = Styled.div`
         justify-content: space-between;
         align-items: center;
         width: 100%;
+
+        @media(max-width: 28rem) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            a {
+                margin-top: 1.2rem;
+                width: 100%;
+                padding: 1.8rem 0;
+            }
+        }
     }   
 
     .text-icon {
@@ -96,6 +116,12 @@ const PackageStyle = Styled.div`
         align-items: center;
         margin: 1.2rem 0;
         width: 100%;
+
+        @media(max-width: 28rem) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
     }
 
     .name {
