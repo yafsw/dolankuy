@@ -51,13 +51,17 @@ const ExperiencesStyle = Styled.section`
 
     .experiences {
         display: grid;
-        grid-template-columns : repeat(auto-fill, minmax(28rem, 1fr));
-        grid-auto-rows : 9.6rem;
+        grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+        grid-auto-rows: 9.6rem;
         place-items: center;
         grid-gap: 2.4rem;
         margin-top: 2.4rem;
         width: 100%;
         max-width: 128rem;
+
+        @media(max-width: 28rem) {
+            grid-template-columns: 1fr;
+        }
     }
 
     .description {
