@@ -75,7 +75,7 @@ const SpecialDealsStyle = Styled.section`
     .packages {
         display: grid;
         grid-template-columns : repeat(auto-fill, minmax(38rem, 1fr));
-        grid-auto-rows : 39rem;
+        grid-auto-rows : 40.6rem;
         place-items: center;
         grid-gap: 2.4rem;
         margin-top: 2.4rem;
