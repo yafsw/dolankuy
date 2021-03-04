@@ -4,10 +4,11 @@ import { RiArrowRightSLine, RiArrowLeftSLine } from 'react-icons/ri';
 import H1 from '../atoms/H1';
 import P from '../atoms/P';
 import { primary } from '../../config/color';
+import Testimonial from '../molecules/Testimonial';
 
-const Testimonial = () => {
+const Testimonials = () => {
     return(
-        <TestimoialStyle>
+        <TestimonialsStyle>
             <div className="title">
                 <div>
                     <H1>Testimonial</H1>
@@ -17,12 +18,32 @@ const Testimonial = () => {
                     <RiArrowLeftSLine className="arrow" />
                     <RiArrowRightSLine className="arrow" />
                 </div>
-            </div>  
-        </TestimoialStyle>
+            </div>
+            <div className="testimonials">
+                <Testimonial
+                    text="Consectetur adipiscing elit. Ut viverra scelerisque dui id ornare. Phasellus purus nibh, eleifend et ullamcorper ac, iaculis in turpis. Quisque ex velit, dapibus quis laoreet quis, aliquet vel diam. Quisque ex velit, dapibus quis laoreet quis, aliquet vel diam."
+                    name="Anya Berlian"
+                    status="Teacher"
+                    src="assets/img/dan-ROJFuWCsfmA-unsplash.jpg"
+                />
+                <Testimonial
+                    text="Consectetur adipiscing elit. Ut viverra scelerisque dui id ornare. Phasellus purus nibh, eleifend et ullamcorper ac, iaculis in turpis. Quisque ex velit, dapibus quis laoreet quis, aliquet vel diam. Quisque ex velit, dapibus quis laoreet quis, aliquet vel diam."
+                    name="Anya Berlian"
+                    status="Teacher"
+                    src="assets/img/dan-ROJFuWCsfmA-unsplash.jpg"
+                />
+                <Testimonial
+                    text="Consectetur adipiscing elit. Ut viverra scelerisque dui id ornare. Phasellus purus nibh, eleifend et ullamcorper ac, iaculis in turpis. Quisque ex velit, dapibus quis laoreet quis, aliquet vel diam. Quisque ex velit, dapibus quis laoreet quis, aliquet vel diam."
+                    name="Anya Berlian"
+                    status="Teacher"
+                    src="assets/img/dan-ROJFuWCsfmA-unsplash.jpg"
+                />
+            </div>
+        </TestimonialsStyle>
     );
 };
 
-const TestimoialStyle = Styled.section`
+const TestimonialsStyle = Styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,6 +78,17 @@ const TestimoialStyle = Styled.section`
         color: ${primary};
         font-size: 4rem;
     }
+
+    .testimonials {
+        display: grid;
+        grid-template-columns : repeat(auto-fill, minmax(38rem, 1fr));
+        grid-auto-rows : 40.6rem;
+        place-items: center;
+        grid-gap: 2.4rem;
+        margin-top: 2.4rem;
+        width: 100%;
+        max-width: 128rem;
+    }
 `;
 
-export default memo(Testimonial);
+export default memo(Testimonials);
