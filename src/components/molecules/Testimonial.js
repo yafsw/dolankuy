@@ -24,12 +24,13 @@ const Testimonial = props => {
 const TestimonialStyle = Styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     background-color: white;
     box-shadow: 0 1.5rem 4rem rgba(15,48,87,.1);
     border-radius: 1.4rem;
     padding: 2.4rem;
+    height: 28rem;
 
     div:nth-child(2) {
         display: flex;
@@ -41,11 +42,21 @@ const TestimonialStyle = Styled.div`
             border-radius: 5rem;
             height: 5rem;
             width: 5rem;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             img {
-                height: auto;
-                width: 100%;
+                height: 100%;
             }
+        }
+
+        div:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
         }
     }
 `;
