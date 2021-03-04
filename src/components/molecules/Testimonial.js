@@ -6,7 +6,7 @@ const Testimonial = props => {
     return (
         <TestimonialStyle>
             <div>
-                <P color="grey">{props.text}</P>
+                <P color="grey" width="max">{props.text}</P>
             </div>
             <div>
                 <div>
@@ -31,6 +31,11 @@ const TestimonialStyle = Styled.div`
     border-radius: 1.4rem;
     padding: 2.4rem;
     height: 28rem;
+    width: 100%;
+
+    @media(max-width: 28rem) {
+        height: 36rem;
+    }
 
     div:nth-child(2) {
         display: flex;

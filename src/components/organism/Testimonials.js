@@ -82,12 +82,17 @@ const TestimonialsStyle = Styled.section`
     .testimonials {
         display: grid;
         grid-template-columns : repeat(auto-fill, minmax(38rem, 1fr));
-        grid-auto-rows : 40.6rem;
+        grid-auto-rows : 28rem;
         place-items: center;
         grid-gap: 2.4rem;
         margin-top: 2.4rem;
         width: 100%;
         max-width: 128rem;
+
+        @media(max-width: 28rem) {
+            grid-auto-rows : 36rem;
+            grid-template-columns: 1fr;
+        }
     }
 `;
 
