@@ -2,6 +2,7 @@ import React, { memo, useState, useEffect } from 'react';
 import Header from '../layout/Header';
 import MainHome from '../layout/MainHome';
 import { useApp } from '../context';
+import Footer from '../layout/Footer';
 
 const Home = () => {
     const { state } = useApp();
@@ -24,6 +25,7 @@ const Home = () => {
         <>
             <Header color="white" background={scroll} />
             <MainHome />
+            <Footer />
         </>
     );      
 };
