@@ -6,7 +6,7 @@ const Testimonial = props => {
     return (
         <TestimonialStyle>
             <div>
-                <P>{props.text}</P>
+                <P color="grey">{props.text}</P>
             </div>
             <div>
                 <div>
@@ -14,7 +14,7 @@ const Testimonial = props => {
                 </div>
                 <div>
                     <b><P>{props.name}</P></b>
-                    <P>{props.status}</P>
+                    <P color="grey">{props.status}</P>
                 </div>
             </div>
         </TestimonialStyle>
